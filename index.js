@@ -1,6 +1,14 @@
+/*jshint esversion: 6 */
 
 function sum(fromN, toN) {
-  // Sum all the values from fromN up to toN
+  let total = fromN;
+
+  if (fromN === toN){
+    return toN;
+  }
+
+  return total += sum(fromN + 1, toN);
 }
 
 module.exports = sum;
+
